@@ -1,0 +1,135 @@
+.multi-range-slider {
+  padding: 30px 25px 0px 25px;
+  position: relative;
+}
+
+.inner {
+  position: relative;
+  margin: 30px 12px 0px 12px;
+}
+
+.slider {
+  position: relative;
+  z-index: 1;
+  height: 1px;
+  margin: 0 15px;
+}
+
+.slider > .track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: rgba(229, 229, 229, 1);
+}
+
+.slider > .range {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: rgba(234, 126, 115, 1);
+}
+
+.slider > .thumb {
+  position: absolute;
+  z-index: 3;
+  width: 2px;
+  height: 11px;
+  background-color: rgba(234, 126, 115, 1);
+  box-shadow: 0 0 0 0 rgba(98, 0, 238, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.slider > .thumb.left {
+  left: 25%;
+  transform: translate(-15px, -5px);
+}
+
+.slider > .thumb.right {
+  right: 25%;
+  transform: translate(15px, -5px);
+}
+
+input[type="range"] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  opacity: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  -webkit-appearance: none;
+}
+
+/*====================*/
+.slider > .endpoint {
+  position: absolute;
+  z-index: 3;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(229, 229, 229, 1);
+  border-radius: 50%;
+  /*border-radius: 50%;*/
+}
+
+.slider > .endpoint.left {
+  left: 3%;
+  transform: translate(-15px, -5px);
+}
+
+.slider > .endpoint.right {
+  right: 3%;
+  transform: translate(15px, -5px);
+}
+
+.slidervalues {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 8px 0px 8px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(246, 246, 246, 1);
+}
+
+.slidervalues > p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(76, 82, 40, 1);
+}
+
+.s_val_div {
+  width: 81px;
+  height: 25px;
+  border-radius: 50px;
+  border: 1px solid rgba(229, 229, 229, 1);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(76, 82, 40, 1);
+  font-size: 12px;
+}
+
+#sv_left {
+  margin-right: 10px;
+}
