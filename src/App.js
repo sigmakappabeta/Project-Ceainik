@@ -23,7 +23,7 @@ import fpic1 from "./components/images/fpic1.png";
 export const DisplayContext = createContext(null);
 
 function App() {
-  console.log("git message");
+  //console.log("git message");
   const screenWidth = window.innerWidth;
   //console.log(screenWidth);
   const [displayVal, setDisplayVal] = useState("none");
