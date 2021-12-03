@@ -862,20 +862,24 @@
 
 .special_option > img {
   max-width: 123px;
+  pointer-events: none;
 }
 
 .plus_and_price {
   display: flex;
   margin: 10px 0px 5px 0px;
+  pointer-events: none;
 }
 
 .plus_and_price > p {
   font-size: 14px;
+  pointer-events: none;
 }
 
 .plus_and_price > img {
   width: 17px;
   margin: 0px 10px 0px 5px;
+  pointer-events: none;
 }
 
 .total_div {
