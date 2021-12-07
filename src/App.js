@@ -133,6 +133,9 @@ function App() {
               </div>
             </div>
           </Route>
+          <Route exact path="/cart">
+            <div className="body_block"></div>
+          </Route>
         </Switch>
       </Router>
 
