@@ -16,9 +16,12 @@ import MobileFilterArea from "./components/MobileFilterArea";
 import Pagination from "./components/Pagination";
 import Gallery from "./components/Gallery";
 import OrderSetup from "./components/OrderSetup";
+import ProductInCart from "./components/ProductInCart";
+import CustomerDetailsForm from "./components/CustomerDetailsForm";
 //import { DisplayContext } from "./components/DisplayContext";
 
 import fpic1 from "./components/images/fpic1.png";
+import OrderDetailsBlock from "./components/OrderDetailsBlock";
 
 export const DisplayContext = createContext(null);
 
@@ -134,6 +137,20 @@ function App() {
             </div>
           </Route>
           <Route exact path="/cart">
+            <div className="body_block">
+              <div className="product_page_body_block">
+                <div className="block2_3">
+                  <ProductInCart />
+                  <ProductInCart />
+                  <CustomerDetailsForm />
+                </div>
+                <div className="block1_3">
+                  <OrderDetailsBlock />
+                </div>
+              </div>
+            </div>
+          </Route>
+          <Route exact path="/contacts">
             <div className="body_block"></div>
           </Route>
         </Switch>

@@ -2,6 +2,8 @@ import React from "react";
 import "../index.css";
 import "../responsiveness.css";
 import logo from "./images/logo.png";
+import small_logo from "./images/small_logo.png";
+
 import search_icon from "./images/search_icon.png";
 import whatsapp from "./images/whatsapp.png";
 import viber from "./images/viber.png";
@@ -12,6 +14,7 @@ export default function Header() {
       <div className="container">
         <div className="logo-div">
           <img src={logo} className="logo-img" />
+          <img src={small_logo} className="small_logo-img" />
         </div>
         <div className="search_bar">
           <form className="search_form">

@@ -100,6 +100,7 @@ export default function OrderSetup() {
       key={size.id}
     />
   ));
+  console.log(size_options_block);
 
   const special_option_block = product.specs.map((spec) => (
     <SpecialOption

@@ -27,6 +27,48 @@
     color: rgba(56, 62, 25, 1);
   }
 }
+@media screen and (max-width: 900px) {
+  .selectdiv {
+    margin-right: 20px;
+  }
+  .sign-in {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .phone {
+    display: none;
+  }
+  .social_icons_top > img {
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .logo-img {
+    display: none;
+  }
+  .small_logo-img {
+    display: flex;
+    bottom: -5.5vw;
+  }
+  .inner_cartdiv {
+    width: auto;
+    justify-content: space-around;
+  }
+  .cart_icon {
+    margin: 0 10px 0 20px;
+  }
+
+  .heart_icon {
+    margin: 0 20px 0 10px;
+  }
+  .inner_cartdiv > p {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .banner {
@@ -247,4 +289,80 @@
   /* .gallery > img {
     display: block;
   } */
+}
+@media screen and (max-width: 1260px) {
+  .product_page_body_block {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .product_page_body_block {
+    flex-direction: column;
+  }
+  .block2_3 {
+    margin-right: 0;
+  }
+  .block2_3 > form {
+    margin: 20px 0px 40px 0px;
+  }
+  .product_block > img {
+    margin-left: 0;
+  }
+  .order_details_block {
+    margin-right: 0;
+  }
+  .delivery_date {
+    width: 30%;
+  }
+  .date_input {
+    width: 100%;
+  }
+  .delivery_dropdown {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .block2_3 > form {
+    flex-direction: column;
+  }
+  #form_container2 {
+    padding: 0px 25px 0px 25px;
+  }
+  .form_container > input {
+    padding: 0px 0px 0px 15px;
+  }
+  .product_block > img {
+    width: 20%;
+  }
+  .product_info > p {
+    font-size: 2.5vw;
+  }
+
+  .product_info > span {
+    font-size: 2.969vw;
+  }
+  /* =============== */
+}
+
+@media screen and (max-width: 450px) {
+  .delivery_dropdowns_block {
+    flex-direction: column;
+  }
+  .delivery_date {
+    width: 70%;
+  }
+  .date_input {
+    width: 100%;
+  }
+  .delivery_dropdown {
+    width: 70%;
+  }
+  .dropdown-content {
+    width: 101%;
+  }
+  .delivery > button {
+    width: 70%;
+  }
 }
