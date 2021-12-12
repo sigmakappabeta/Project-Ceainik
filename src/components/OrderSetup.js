@@ -36,12 +36,14 @@ export default function OrderSetup() {
 
   //=======================
   const [selected_size, set_selected_size] = useState("1");
-  const [selected_special_op, set_selected_special_op] = useState("1");
+  const [selected_special_op, set_selected_special_op] = useState(null);
 
   //============================
   let selected_size_obj;
   let selected_spec_obj;
   let grand_total;
+  let spec_obj_name;
+  let spec_obj_price;
   try {
     selected_size_obj = product.sizes.find((obj) => {
       return obj.id === selected_size;
@@ -70,8 +72,18 @@ export default function OrderSetup() {
   // if (selected_size_obj === "" || selected_spec_obj === "") {
   //   grand_total = "";
   // }
-  grand_total =
-    parseInt(selected_size_obj.price) + parseInt(selected_spec_obj.price);
+  if (selected_special_op === null) {
+    spec_obj_name = " ";
+    spec_obj_price = " ";
+
+    grand_total = parseInt(selected_size_obj.price);
+  } else {
+    spec_obj_name = selected_spec_obj.name;
+    spec_obj_price = selected_spec_obj.price + " mdl";
+    grand_total =
+      parseInt(selected_size_obj.price) + parseInt(selected_spec_obj.price);
+  }
+
   // console.log(grand_total);
 
   //============================
@@ -100,7 +112,7 @@ export default function OrderSetup() {
       key={size.id}
     />
   ));
-  console.log(size_options_block);
+  // console.log(size_options_block);
 
   const special_option_block = product.specs.map((spec) => (
     <SpecialOption
@@ -144,8 +156,8 @@ export default function OrderSetup() {
               <p>{selected_size_obj.price} mdl</p>
             </div>
             <div className="bought_item">
-              <p>{selected_spec_obj.name}</p>
-              <p>{selected_spec_obj.price} mdl</p>
+              <p>{spec_obj_name}</p>
+              <p>{spec_obj_price}</p>
             </div>
           </div>
           <div className="order_btn_div">

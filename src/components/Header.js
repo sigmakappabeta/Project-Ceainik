@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../index.css";
 import "../responsiveness.css";
 import logo from "./images/logo.png";
@@ -13,8 +14,12 @@ export default function Header() {
     <div className="header">
       <div className="container">
         <div className="logo-div">
-          <img src={logo} className="logo-img" />
-          <img src={small_logo} className="small_logo-img" />
+          <NavLink to="/">
+            <img src={logo} className="logo-img" href="/" />
+          </NavLink>
+          <NavLink to="/">
+            <img src={small_logo} className="small_logo-img" />
+          </NavLink>
         </div>
         <div className="search_bar">
           <form className="search_form">

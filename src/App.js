@@ -40,10 +40,10 @@ function App() {
 
   return (
     <div className="app_div">
-      <Topline />
-      <Header />
-      <Navbar />
       <Router>
+        <Topline />
+        <Header />
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <HomepageHeader />
@@ -154,9 +154,9 @@ function App() {
             <div className="body_block"></div>
           </Route>
         </Switch>
-      </Router>
 
-      <Footer />
+        <Footer />
+      </Router>
     </div>
   );
 }

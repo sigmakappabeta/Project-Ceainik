@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "../index.css";
 import "../responsiveness.css";
 import menu_white from "./images/menu_white.png";
@@ -48,20 +49,22 @@ export default function Navbar() {
           <select>
             <option value="">OCAZIE</option>
           </select>
-          <select>
-            <option value="">TOATE PRODUSELE</option>
-          </select>
-          <div>CONTACTE</div>
+          <NavLink to="/catalog">TOATE PRODUSELE</NavLink>
+
+          <NavLink to="/contacts">CONTACTE</NavLink>
         </div>
         <div className="topnav_empty_div"></div>
         <div className="cartdiv">
           <div className="inner_cartdiv">
-            <img
-              src={cartIcon}
-              className="cart_icon"
-              onMouseOver={handleCarttHover}
-              onMouseOut={handleCarttHover}
-            />
+            <NavLink to="/cart">
+              <img
+                src={cartIcon}
+                className="cart_icon"
+                onMouseOver={handleCarttHover}
+                onMouseOut={handleCarttHover}
+              />
+            </NavLink>
+
             <p>0.00 MDL</p>
             <img
               src={heartIcon}

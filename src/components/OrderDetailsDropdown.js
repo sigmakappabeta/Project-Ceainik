@@ -57,11 +57,34 @@ export default function OrderDetailsDropdown(props) {
     return (
       <p
         onClick={() => {
-          setState(time.hour);
           if (props.id === "0") {
-            setFromTime(time.id);
+            if (untilTime === "Pana la") {
+              setState(time.hour);
+              setFromTime(time.id);
+            } else if (fromTime === "De la" && time.id < untilTime) {
+              setState(time.hour);
+              setFromTime(time.id);
+            } else if (time.id < untilTime) {
+              setState(time.hour);
+              setFromTime(time.id);
+            } else {
+              alert("Delivery timeframe start cannot be later than the end!");
+            }
           } else if (props.id === "1") {
-            setUntilTime(time.id);
+            if (fromTime === "De la") {
+              setState(time.hour);
+              setUntilTime(time.id);
+            } else if (untilTime === "Pana la" && fromTime < time.id) {
+              setState(time.hour);
+              setUntilTime(time.id);
+            } else if (fromTime < time.id) {
+              setState(time.hour);
+              setUntilTime(time.id);
+            } else {
+              alert("Delivery timeframe start cannot be later than the end!");
+            }
+            // setUntilTime(time.id);
+            // console.log("setuntil", time.id);
           }
         }}
         key={time.id}
