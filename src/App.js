@@ -22,6 +22,8 @@ import CustomerDetailsForm from "./components/CustomerDetailsForm";
 
 import fpic1 from "./components/images/fpic1.png";
 import OrderDetailsBlock from "./components/OrderDetailsBlock";
+import ContactsPageText from "./components/ContactsPageText";
+import ContactsPageForm from "./components/ContactsPageForm";
 
 export const DisplayContext = createContext(null);
 
@@ -151,7 +153,12 @@ function App() {
             </div>
           </Route>
           <Route exact path="/contacts">
-            <div className="body_block"></div>
+            <div className="body_block">
+              <div className="contact_page_block">
+                <ContactsPageText id="cp1" />
+                <ContactsPageForm id="cp2" />
+              </div>
+            </div>
           </Route>
         </Switch>
 
