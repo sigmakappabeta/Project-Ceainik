@@ -1,0 +1,114 @@
+[{  "id":"1",
+    "name": "BUCHET_NO_#1",
+    "description":
+      "Egestas fames nunc dignissim neque, amet cursus lobortis. Eu non pharetra ac justo iaculis. Risus nunc lectus egestas senectus ac potenti duis duis sagittis. Blandit eu, cursus purus vel iaculis proin. Consectetur accumsan pellentesque etiam orci. Nulla egestas adipiscing libero mi.",
+    "pc_image": "fpic1.png",
+      "images": [
+      "buchet.png",
+      "buchet_orange.png",
+      "buchet_blue.png",
+      "buchet_green.png"
+    ],
+      "sizes": [
+      { "size": "mare", "price": "860", "id": "1" },
+      { "size": "mediu", "price": "750", "id": "2" },
+      { "size": "mic", "price": "650", "id": "3" }
+    ],
+    "specs": [
+      { "name": "Ursuleț de pluș", "img": "teddy_1.png", "price": "123", "id": "1" },
+      {
+        "name": "Ursuleț de catifea",
+        "img": "teddy_1.png",
+        "price": "343",
+        "id": "2"
+      },
+      { "name": "Ursuleț de roșu", "img": "teddy_1.png", "price": "563", "id": "3" },
+      { "name": "Ursuleț de alb", "img": "teddy_1.png", "price": "783", "id": "4" }
+    ]
+  },
+  {  "id":"2",
+    "name": "BUCHET_NO_#1",
+    "description":
+      "Egestas fames nunc dignissim neque, amet cursus lobortis. Eu non pharetra ac justo iaculis. Risus nunc lectus egestas senectus ac potenti duis duis sagittis. Blandit eu, cursus purus vel iaculis proin. Consectetur accumsan pellentesque etiam orci. Nulla egestas adipiscing libero mi.",
+    "pc_image": "fpic1.png",
+      "images": [
+      "buchet.png",
+      "buchet_orange.png",
+      "buchet_blue.png",
+      "buchet_green.png"
+    ],
+      "sizes": [
+      { "size": "mare", "price": "860", "id": "1" },
+      { "size": "mediu", "price": "750", "id": "2" },
+      { "size": "mic", "price": "650", "id": "3" }
+    ],
+    "specs": [
+      { "name": "Ursuleț de pluș", "img": "teddy_1.png", "price": "123", "id": "1" },
+      {
+        "name": "Ursuleț de catifea",
+        "img": "teddy_1.png",
+        "price": "343",
+        "id": "2"
+      },
+      { "name": "Ursuleț de roșu", "img": "teddy_1.png", "price": "563", "id": "3" },
+      { "name": "Ursuleț de alb", "img": "teddy_1.png", "price": "783", "id": "4" }
+    ]
+  },
+  {  "id":"3",
+    "name": "BUCHET_NO_#1",
+    "description":
+      "Egestas fames nunc dignissim neque, amet cursus lobortis. Eu non pharetra ac justo iaculis. Risus nunc lectus egestas senectus ac potenti duis duis sagittis. Blandit eu, cursus purus vel iaculis proin. Consectetur accumsan pellentesque etiam orci. Nulla egestas adipiscing libero mi.",
+    "pc_image": "fpic1.png",
+      "images": [
+      "buchet.png",
+      "buchet_orange.png",
+      "buchet_blue.png",
+      "buchet_green.png"
+    ],
+      "sizes": [
+      { "size": "mare", "price": "860", "id": "1" },
+      { "size": "mediu", "price": "750", "id": "2" },
+      { "size": "mic", "price": "650", "id": "3" }
+    ],
+    "specs": [
+      { "name": "Ursuleț de pluș", "img": "teddy_1.png", "price": "123", "id": "1" },
+      {
+        "name": "Ursuleț de catifea",
+        "img": "teddy_1.png",
+        "price": "343",
+        "id": "2"
+      },
+      { "name": "Ursuleț de roșu", "img": "teddy_1.png", "price": "563", "id": "3" },
+      { "name": "Ursuleț de alb", "img": "teddy_1.png", "price": "783", "id": "4" }
+    ]
+  },
+  {  "id":"4",
+    "name": "BUCHET_NO_#1",
+    "description":
+      "Egestas fames nunc dignissim neque, amet cursus lobortis. Eu non pharetra ac justo iaculis. Risus nunc lectus egestas senectus ac potenti duis duis sagittis. Blandit eu, cursus purus vel iaculis proin. Consectetur accumsan pellentesque etiam orci. Nulla egestas adipiscing libero mi.",
+    "pc_image": "fpic1.png",
+      "images": [
+      "buchet.png",
+      "buchet_orange.png",
+      "buchet_blue.png",
+      "buchet_green.png"
+    ],
+      "sizes": [
+      { "size": "mare", "price": "860", "id": "1" },
+      { "size": "mediu", "price": "750", "id": "2" },
+      { "size": "mic", "price": "650", "id": "3" }
+    ],
+    "specs": [
+      { "name": "Ursuleț de pluș", "img": "teddy_1.png", "price": "123", "id": "1" },
+      {
+        "name": "Ursuleț de catifea",
+        "img": "teddy_1.png",
+        "price": "343",
+        "id": "2"
+      },
+      { "name": "Ursuleț de roșu", "img": "teddy_1.png", "price": "563", "id": "3" },
+      { "name": "Ursuleț de alb", "img": "teddy_1.png", "price": "783", "id": "4" }
+    ]
+  }
+  
+]

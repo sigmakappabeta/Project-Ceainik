@@ -24,6 +24,10 @@ import fpic1 from "./components/images/fpic1.png";
 import OrderDetailsBlock from "./components/OrderDetailsBlock";
 import ContactsPageText from "./components/ContactsPageText";
 import ContactsPageForm from "./components/ContactsPageForm";
+import prod from "./JSON files/products_DB.json";
+
+const productsDB = () => JSON.parse(JSON.stringify(prod));
+console.log(productsDB);
 
 export const DisplayContext = createContext(null);
 
@@ -39,6 +43,15 @@ function App() {
       setDisplayVal("block");
     }
   }, []);
+
+  //==================
+  // console.log(prod);
+  const productsURL = "./JSON files/products_DB.json";
+  // fetch("./JSON files/products_DB.json")
+  //   .then((res) => res.json())
+  //   .then((data) => console.log(data));
+  // useEffect(() => {}, []);
+  //==================
 
   return (
     <div className="app_div">
