@@ -28,6 +28,7 @@ import prod from "./JSON files/products_DB.json";
 
 const productsDB = () => JSON.parse(JSON.stringify(prod));
 console.log(productsDB);
+console.log("newApp");
 
 export const DisplayContext = createContext(null);
 
