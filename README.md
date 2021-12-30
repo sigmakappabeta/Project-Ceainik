@@ -1,6 +1,6 @@
 # Flower Store e-commerce frontend (developed in React)
 
-### `The project is intended for skill demostration purposes`
+## The project is intended for skill demostration purposes
 
 ### `*it is still in development`
 
